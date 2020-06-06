@@ -1,0 +1,40 @@
+.alert {
+    position: relative;
+    padding: $font-size-base;
+    color: $white;
+    border-radius: $alert-border-radius;
+    transition: $alert-transition;
+    min-height: $font-size-base * 3;
+    overflow: hidden;
+    .migu-alert-message {
+        font-size: $h4-font-size;
+        font-weight: $font-weight-bold;
+    }
+    .migu-alert-close-icon {
+        position: absolute;
+        right: $font-size-base;
+        top: $font-size-base;
+        background: transparent;
+        color: $white;
+        border: none;
+    }
+    &-success {
+        background: $success;
+    }
+    &-default {
+        background: $info;
+    }
+    &-warning {
+        background: $warning;
+        color: $body-color;
+    }
+    &-danger {
+        background: $danger;
+    }
+    &-close {
+        min-height: auto;
+        height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
