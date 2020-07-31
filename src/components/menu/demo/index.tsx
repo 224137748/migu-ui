@@ -4,10 +4,17 @@ import Menu from '../menu'
 const MemuDemo = () => {
     return (
         <div>
-            <Menu>
-                <MenuItem>cool link1</MenuItem>
-                <MenuItem>cool link2</MenuItem>
-                <MenuItem>cool link3</MenuItem>
+            <Menu
+                defaultIndex={1}
+                onSelect={(index) => {
+                    alert(index)
+                }}
+            >
+                <MenuItem index={1}>cool link1</MenuItem>
+                <MenuItem index={2}>cool link2</MenuItem>
+                <MenuItem index={3} disabled>
+                    cool link3
+                </MenuItem>
             </Menu>
         </div>
     )
