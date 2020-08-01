@@ -1,6 +1,5 @@
 import React, { useState, createContext, useCallback } from 'react'
 import classNames from 'classnames'
-import { type } from 'os'
 
 type MenuMode = 'horizontal' | 'vertical'
 
@@ -34,10 +33,13 @@ const Menu: React.FC<MenuProps> = (props) => {
         'menu-horizontal': mode === 'horizontal',
     })
 
-    const handleClick = useCallback((index: number) => {
-        setActive(index)
-        onSelect && onSelect(index)
-    }, [])
+    const handleClick = useCallback(
+        (index: number) => {
+            setActive(index)
+            onSelect && onSelect(index)
+        },
+        [onSelect]
+    )
 
     const passedContext = {
         index: currentActive,

@@ -6,7 +6,8 @@ const MemuDemo = () => {
         <div>
             <Menu
                 defaultIndex={1}
-                onSelect={(index) => {
+                mode='vertical'
+                onSelect={(index: number) => {
                     alert(index)
                 }}
             >
