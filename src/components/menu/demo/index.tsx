@@ -11,11 +11,9 @@ const MemuDemo = () => {
                     alert(index)
                 }}
             >
-                <MenuItem index={1}>cool link1</MenuItem>
-                <MenuItem index={2}>cool link2</MenuItem>
-                <MenuItem index={3} disabled>
-                    cool link3
-                </MenuItem>
+                <MenuItem>cool link1</MenuItem>
+                <MenuItem>cool link2</MenuItem>
+                <MenuItem disabled>cool link3</MenuItem>
             </Menu>
         </div>
     )
