@@ -1,17 +1,11 @@
 /* config */
-@import 'variables';
+@import "variables";
 
 /* normalize.css */
-@import 'reboot';
+@import "reboot";
 
 /* minxin */
-@import 'mixin';
+@import "mixin";
 
 /* button */
-@import '../components/Button/style';
-
-/* alter */
-@import '../components/Alert/style';
-
-/* menu */
-@import '../components/menu/style';
+@import "../components/Button/style";
